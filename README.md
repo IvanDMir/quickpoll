@@ -1,6 +1,6 @@
 # QuickPoll
 
-A simple real-time voting app made of five containers.
+A simple real-time voting app made of five containers, made with the help of Claude Code.
 
 ```
 ballot (Python) ──► Redis ──► counter (.NET) ──► PostgreSQL ──► tally (Node)
