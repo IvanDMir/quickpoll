@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickPoll · Live results</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main class="board">
+    <p class="eyebrow">Live results</p>
+    <h1>Who wins: Liverpool or Arsenal?</h1>
+
+    <div class="bar" aria-hidden="true">
+      <div class="fill fill-a" id="fill-a"></div>
+      <div class="fill fill-b" id="fill-b"></div>
+    </div>
+
+    <div class="sides">
+      <section>
+        <span class="tag tag-a">LIV</span>
+        <span class="name">Liverpool</span>
+        <strong id="pct-a">50%</strong>
+        <small id="count-a">0 votes</small>
+      </section>
+      <section class="right">
+        <span class="tag tag-b">ARS</span>
+        <span class="name">Arsenal</span>
+        <strong id="pct-b">50%</strong>
+        <small id="count-b">0 votes</small>
+      </section>
+    </div>
+
+    <p class="total" id="total">No votes yet</p>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

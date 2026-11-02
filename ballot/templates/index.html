@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickPoll</title>
+  <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">QuickPoll</p>
+    <h1>Who wins: Liverpool or Arsenal?</h1>
+
+    <form method="post" class="options">
+      <button type="submit" name="choice" value="a" class="option {{ 'is-selected' if selected == 'a' }}">
+        <span class="key">LIV</span> Liverpool
+      </button>
+      <button type="submit" name="choice" value="b" class="option {{ 'is-selected' if selected == 'b' }}">
+        <span class="key">ARS</span> Arsenal
+      </button>
+    </form>
+
+    {% if selected %}
+      <p class="hint">Got it. You can change your answer anytime.</p>
+    {% endif %}
+  </main>
+</body>
+</html>
